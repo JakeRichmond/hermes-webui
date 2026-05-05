@@ -3363,7 +3363,7 @@ async function checkInflightOnBoot(sid) {
 
 function syncTopbar(){
   if(!S.session){
-    document.title=window._botName||'Hermes';
+    document.title='Primal Command Center';
     if(typeof syncWorkspaceDisplays==='function') syncWorkspaceDisplays();
     if(typeof syncModelChip==='function') syncModelChip();
     if(typeof syncTerminalButton==='function') syncTerminalButton();
@@ -3382,7 +3382,7 @@ function syncTopbar(){
   }
   const sessionTitle=S.session.title||t('untitled');
   const _topbarTitle=$('topbarTitle');if(_topbarTitle)_topbarTitle.textContent=sessionTitle;
-  document.title=sessionTitle+' \u2014 '+(window._botName||'Hermes');
+  document.title=sessionTitle+' - Primal Command Center';
   const vis=S.messages.filter(m=>m&&m.role&&m.role!=='tool');
   const _topbarMeta=$('topbarMeta');
   if(_topbarMeta){

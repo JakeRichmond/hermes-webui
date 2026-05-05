@@ -1636,31 +1636,31 @@ def _resolve_login_locale_key(raw_lang: str | None) -> str:
 # ── Login page (self-contained, no external deps) ────────────────────────────
 _LOGIN_PAGE_HTML = """<!doctype html>
 <html lang="{{LANG}}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{BOT_NAME}} — {{LOGIN_TITLE}}</title>
+<title>Primal Command Center — {{LOGIN_TITLE}}</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#1a1a2e;color:#e8e8f0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
-  height:100vh;display:flex;align-items:center;justify-content:center}
-.card{background:#16213e;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:36px 32px;
-  width:320px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.3)}
-.logo{width:48px;height:48px;border-radius:12px;background:linear-gradient(145deg,#e8a030,#e94560);
-  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;color:#fff;
-  margin:0 auto 12px;box-shadow:0 2px 12px rgba(233,69,96,.3)}
-h1{font-size:18px;font-weight:600;margin-bottom:4px}
-.sub{font-size:12px;color:#8888aa;margin-bottom:24px}
+body{background:#050604;color:#f4f7ee;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;background-image:radial-gradient(circle at top left,rgba(106,134,68,.18),transparent 36%)}
+.card{background:#080a06;border:1px solid rgba(106,134,68,.36);border-radius:16px;padding:36px 32px;
+  width:340px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.45)}
+.logo{width:230px;height:72px;border-radius:0;background:url('static/primal-logo-horizontal-white.png') center/contain no-repeat;
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0;color:transparent;
+  margin:0 auto 18px;box-shadow:none}
+h1{font-size:18px;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:.08em}
+.sub{font-size:12px;color:#a9b49b;margin-bottom:24px}
 input{width:100%;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);
   background:rgba(255,255,255,.04);color:#e8e8f0;font-size:14px;outline:none;margin-bottom:14px;
   transition:border-color .15s}
-input:focus{border-color:rgba(124,185,255,.5);box-shadow:0 0 0 3px rgba(124,185,255,.1)}
-button{width:100%;padding:10px;border-radius:10px;border:none;background:rgba(124,185,255,.15);
-  border:1px solid rgba(124,185,255,.3);color:#7cb9ff;font-size:14px;font-weight:600;cursor:pointer;
-  transition:all .15s}
-button:hover{background:rgba(124,185,255,.25)}
+input:focus{border-color:rgba(106,134,68,.7);box-shadow:0 0 0 3px rgba(106,134,68,.18)}
+button{width:100%;padding:10px;border-radius:10px;border:none;background:#6A8644;
+  border:1px solid #7fa653;color:#050604;font-size:14px;font-weight:800;cursor:pointer;
+  transition:all .15s;text-transform:uppercase;letter-spacing:.04em}
+button:hover{background:#7fa653;box-shadow:0 0 18px rgba(106,134,68,.35)}
 .err{color:#e94560;font-size:12px;margin-top:10px;display:none}
 </style></head><body>
 <div class="card">
   <div class="logo">{{BOT_NAME_INITIAL}}</div>
-  <h1>{{BOT_NAME}}</h1>
+  <h1>Primal Command Center</h1>
   <p class="sub">{{LOGIN_SUBTITLE}}</p>
   <form id="login-form" data-invalid-pw="{{LOGIN_INVALID_PW}}" data-conn-failed="{{LOGIN_CONN_FAILED}}">
     <input type="password" id="pw" placeholder="{{LOGIN_PLACEHOLDER}}" autofocus>

@@ -1219,13 +1219,13 @@ function applyBotName(){
   }else{
     name=window._botName||'Hermes';
   }
-  document.title=name;
+  document.title='Primal Command Center';
   const sidebarH1=document.querySelector('.sidebar-header h1');
   if(sidebarH1) sidebarH1.textContent=name;
   const logo=document.querySelector('.sidebar-header .logo');
-  if(logo) logo.textContent=name.charAt(0).toUpperCase();
+  if(logo) logo.textContent='';
   const topbarTitle=$('topbarTitle');
-  if(topbarTitle && (!S.session)) topbarTitle.textContent=name;
+  if(topbarTitle && (!S.session)) topbarTitle.textContent='Primal Command Center';
   const msg=$('msg');
   if(msg) msg.placeholder='Message '+name+'\u2026';
 }

@@ -3530,3 +3530,100 @@ main.main.showing-logs > #mainLogs{display:flex;}
 .log-line-debug{color:var(--muted);opacity:.75;}
 .logs-empty,.logs-hint{margin:8px 14px;padding:12px;border:1px solid var(--border);border-radius:8px;color:var(--muted);background:var(--surface);white-space:normal;font-family:var(--font-ui,system-ui,sans-serif);font-size:12px;}
 .logs-hint.warn{color:#f59e0b;border-color:rgba(245,158,11,.35);background:rgba(245,158,11,.08);}
+
+
+/* Primal Screen Print brand restoration */
+:root,
+:root.dark{
+  --bg:#050604;
+  --sidebar:#080a06;
+  --surface:#0d100a;
+  --topbar-bg:rgba(8,10,6,.98);
+  --main-bg:rgba(5,6,4,.72);
+  --border:rgba(106,134,68,.28);
+  --border2:rgba(106,134,68,.42);
+  --text:#f4f7ee;
+  --muted:#a9b49b;
+  --strong:#ffffff;
+  --em:#dce8cf;
+  --accent:#6A8644;
+  --accent-hover:#7fa653;
+  --accent-bg:rgba(106,134,68,.14);
+  --accent-bg-strong:rgba(106,134,68,.28);
+  --accent-text:#9fca66;
+  --blue:#6A8644;
+  --gold:#6A8644;
+  --code-bg:#11150d;
+  --code-text:#b8d98c;
+  --code-inline-bg:rgba(106,134,68,.15);
+  --pre-text:#f4f7ee;
+  --input-bg:rgba(255,255,255,.035);
+  --hover-bg:rgba(106,134,68,.1);
+  --focus-ring:rgba(106,134,68,.45);
+  --focus-glow:rgba(106,134,68,.16);
+  --surface-subtle:rgba(106,134,68,.055);
+  --surface-subtle-hover:rgba(106,134,68,.09);
+  --border-subtle:rgba(106,134,68,.18);
+  --border-muted:rgba(106,134,68,.26);
+}
+body{background:radial-gradient(circle at top left,rgba(106,134,68,.16),transparent 32%),var(--bg);}
+.app-titlebar,.sidebar{background:linear-gradient(180deg,#070906,#050604);}
+.app-titlebar-icon svg{display:none;}
+.app-titlebar-icon{width:20px;height:20px;background:url('primal-shield-icon.png') center/contain no-repeat;filter:drop-shadow(0 0 6px rgba(106,134,68,.45));}
+.app-titlebar-title{color:#f4f7ee;text-transform:uppercase;letter-spacing:.08em;font-weight:800;}
+.logo{background:transparent url('primal-shield-icon.png') center/contain no-repeat;border:0;border-radius:0;color:transparent;text-indent:-9999px;box-shadow:none;}
+.panel-head,.sidebar-header{border-color:rgba(106,134,68,.32);}
+.sidebar-header h1,.panel-head span{color:#f4f7ee;text-transform:uppercase;letter-spacing:.06em;font-weight:800;}
+.new-chat-btn,.send-btn,.update-btn.update-primary{background:#6A8644;color:#050604;border-color:#7fa653;font-weight:800;text-transform:uppercase;letter-spacing:.04em;}
+.new-chat-btn:hover,.send-btn:hover,.update-btn.update-primary:hover{background:#7fa653;color:#050604;box-shadow:0 0 18px rgba(106,134,68,.35);}
+.empty-state{background:radial-gradient(circle at center,rgba(106,134,68,.13),transparent 48%);}
+.empty-logo{width:min(380px,82vw);aspect-ratio:2157/529;height:auto;min-height:0;border:0;border-radius:0;background:url('primal-logo-horizontal-white.png') center/contain no-repeat;box-shadow:none;color:transparent;}
+.empty-logo svg{display:none;}
+.empty-state h2{color:#f4f7ee;text-transform:uppercase;letter-spacing:.06em;font-weight:900;}
+.suggestion,.composer-box,.session-item.active{border-color:rgba(106,134,68,.34);}
+.suggestion:hover{border-color:#6A8644;box-shadow:0 0 16px rgba(106,134,68,.22);}
+
+
+/* Primal Command Center visible shell polish */
+.primal-command-head{
+  min-height:86px;
+  padding:16px 18px;
+  align-items:center;
+  gap:14px;
+  background:
+    radial-gradient(circle at 18% 0,rgba(127,160,82,.18),transparent 42%),
+    linear-gradient(135deg,#091006 0%,#050604 64%,#030402 100%);
+  border-bottom:1px solid rgba(106,134,68,.28);
+  box-shadow:inset 0 -1px 0 rgba(255,255,255,.035);
+}
+.primal-command-title{
+  display:block;
+  flex:1 1 auto;
+  min-width:0;
+  max-width:250px;
+  aspect-ratio:2157/529;
+  height:auto;
+  background:url('primal-logo-horizontal-white.png') left center/contain no-repeat;
+  color:transparent;
+  overflow:hidden;
+  text-indent:-9999px;
+}
+.primal-command-title::before{content:none;}
+.primal-command-head .panel-head-actions{margin-left:auto;}
+.primal-command-head .panel-head-btn{
+  width:38px;
+  height:38px;
+  border:1px solid rgba(127,160,82,.36);
+  border-radius:12px;
+  color:#dfe8d2;
+  background:rgba(255,255,255,.035);
+}
+.primal-command-head .panel-head-btn:hover{
+  color:#050604;
+  background:#7FA052;
+  border-color:#9dbb74;
+  box-shadow:0 0 18px rgba(106,134,68,.28);
+}
+.app-titlebar-title{font-size:12px;}
+#topbarTitle{letter-spacing:.08em;text-transform:uppercase;font-weight:900;}
+#topbarTitle:empty::before{content:'PRIMAL COMMAND CENTER';}

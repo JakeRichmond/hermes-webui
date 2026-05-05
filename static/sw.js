@@ -34,8 +34,8 @@ const SHELL_ASSETS = [
   './static/workspace.js' + VQ,
   './static/terminal.js' + VQ,
   './static/onboarding.js' + VQ,
-  './static/favicon.svg',
-  './static/favicon-32.png',
+  './static/favicon-32.png?v=primal-png-fixed-20260505c',
+  './static/favicon-192.png?v=primal-png-fixed-20260505c',
   './manifest.json',
 ];
 
