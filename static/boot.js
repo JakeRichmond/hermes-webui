@@ -1223,7 +1223,7 @@ function applyBotName(){
   const sidebarH1=document.querySelector('.sidebar-header h1');
   if(sidebarH1) sidebarH1.textContent=name;
   const logo=document.querySelector('.sidebar-header .logo');
-  if(logo) logo.textContent='';
+  if(logo){logo.textContent='';logo.setAttribute('aria-label','Primal Operator logo');}
   const topbarTitle=$('topbarTitle');
   if(topbarTitle && (!S.session)) topbarTitle.textContent='Primal Command Center';
   const msg=$('msg');

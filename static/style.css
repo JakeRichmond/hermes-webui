@@ -3571,7 +3571,7 @@ body{background:radial-gradient(circle at top left,rgba(106,134,68,.16),transpar
 .app-titlebar-icon svg{display:none;}
 .app-titlebar-icon{width:20px;height:20px;background:url('primal-shield-icon.png') center/contain no-repeat;filter:drop-shadow(0 0 6px rgba(106,134,68,.45));}
 .app-titlebar-title{color:#f4f7ee;text-transform:uppercase;letter-spacing:.08em;font-weight:800;}
-.logo{width:38px;height:38px;background:transparent url('primal-operator-sidebar-logo.png') center/contain no-repeat;border:0;border-radius:0;color:transparent;text-indent:-9999px;box-shadow:none;}
+.logo,.sidebar-header .logo{width:38px!important;height:38px!important;background:transparent url('primal-operator-sidebar-logo.png') center/contain no-repeat!important;border:0!important;border-radius:0!important;color:transparent!important;text-indent:-9999px!important;box-shadow:none!important;font-size:0!important;line-height:0!important;overflow:hidden!important;}
 .panel-head,.sidebar-header{border-color:rgba(106,134,68,.32);}
 .sidebar-header h1{color:#f4f7ee;text-transform:uppercase;letter-spacing:.07em;font-weight:900;font-size:14px;line-height:1.1;}
 .panel-head span{color:#f4f7ee;text-transform:uppercase;letter-spacing:.06em;font-weight:800;}
